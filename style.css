@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,500&display=swap');
+
+:root 
+{
+	--green: green;
+	--balck:#130f40;
+	--light-color: #666;
+	--box-shadow:0 .1rem 1rem rgba(0,0,0.1);
+	--box-shadow: 1rem solid rgba(0,0,0.1);
+	--outline: 1rem solid rgba(0,0,0.1);
+}
+
+
+*
+{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: all .2s linear;
+}
+
+html
+{
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top: 7rem;
+}
+body
+{
+	background: #eee;
+}
+
+.header
+{
+
+	position: fixed;
+	top: 2.5;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 5%;
+	background: #FF9179;
+	box-shadow: var(--box-shadow);
+}
+.header.logo
+{
+	font-size: 2.8rem;
+	font-weight: bolder;
+}
+.header.logo i
+{
+	color: var(--green);
+}
+
+.header .navbar a
+{
+	font-size: 1.7rem;
+	margin: 0 1rem;
+	color: var(--balck);
+}
+
+.header .navbar a:hover
+{
+	color: var(--green);
+}
+
+.header .icons div
+{
+	border: 0px solid;
+	height: 4.5rem;
+	width: 4.5rem;
+	line-height: 4.5rem;
+	border-radius: .5rem;
+	background: #eee;
+	color: var(--balck);
+	font-size: 2rem;
+	margin-right: .3rem;
+	text-align: center;
+	cursor: pointer;
+
+}
+
+.header .icons div:hover
+{
+	background: var(--green);
+	color: white;
+
+
+}
+
+#menu-btn
+{
+	display: none;
+}
+
+
+.header .Search-form
+{
+	border: 0px solid;
+	position: absolute;
+	top: 110%;
+	right: 2rem;
+	normal-width: 50rem;
+	height: 4.5rem;
+	background: #fff;
+	border-radius: .5rem;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	box-shadow: var(--box-shadow);
+
+}
+
+.header .Search-form input
+{
+	height:100%;
+	width: 100%;
+	background: none;
+	text-transform: none;
+	font-size:1.6rem;
+	color:var(--black);
+	padding: 0 1.5rem;
+
+}
+.header .Search-form label
+{
+	font-size: 2.2rem;
+	padding-right: 1.5rem;
+	color: var(--balck);
+	cursor: pointer;
+
+}
+.header .Search-form label:hover
+{
+	color: var(--green);
+}
